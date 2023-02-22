@@ -2,7 +2,9 @@
 Prediction using Logistic Regression
 
 1.Introduction
-Decision trees are one of many supervised learning algorithms available to anyone looking to make predictions of future events based on some historical data and, although there is no one generic tool optimal for all problems, decision trees are hugely popular and turn out to be very effective in many machine learning applications. Decision tree uses the tree representation to solve the problem in which each leaf node corresponds to a class label and attributes are represented on the internal node of the tree. We can represent any Boolean function on discrete attributes using the decision tree.
+Logistic regression is a supervised learning algorithm used to predict a dependent categorical target variable. In essence, if you have a large set of data that you want to categorize, logistic regression may be able to help.
+Logistic regression predicts the output of a categorical dependent variable. Therefore the outcome must be a categorical or discrete value. It can be either Yes or No, 0 or 1, true or False, etc. but instead of giving the exact value as 0 and 1, it gives the probabilistic values which lie between 0 and 1.
+
 
 2.	Data Exploration: 
 Let’s explore the dataset. It shows which users have purchased an Iphone. Our objective in this project is to predict if the customer will purchase an Iphone or not given their gender, age and salary. The sample rows are shown below. The column Gender is alphanumeric which is converted to numeric values. The columns “Gender”, “Age”, “Salary” are selected as features and the column “Purchase Iphone” is selected as a target.
@@ -30,14 +32,14 @@ The train-test split is a technique for evaluating the performance of a machine 
 
 6. Feature Scaling and Fit the Classifier
 We will be using the DecisionTreeClassifier from the sklearn.tree library. When we create the object of DecisionTreeClassifier, we will set the criterion parameter as entropy.
-![image](https://user-images.githubusercontent.com/21077069/220509860-d3ff4905-0b3c-4e91-b5c0-facac91d5be4.png)
+![image](https://user-images.githubusercontent.com/21077069/220511599-e30c3d9a-ee63-480b-8a26-81b1e02cd590.png)
 
 
 7. Make Predictions
 Now that we have trained the model, let’s make some predictions using the test dataset. 
-![image](https://user-images.githubusercontent.com/21077069/220509877-8b64ad54-91b9-4887-b007-ec955e366461.png)
+![image](https://user-images.githubusercontent.com/21077069/220511619-165b755c-f38e-464f-8d37-68a8359cbf3b.png)
 
 Precision Score: It is the percentage of predicted positive events that are actually positive.
 Precision = TP / (TP + FP)
-![image](https://user-images.githubusercontent.com/21077069/220509966-74ea0586-cef8-4091-88b2-f8e83bf4eae1.png)
+![image](https://user-images.githubusercontent.com/21077069/220511653-25c49641-ab6f-4e90-88a2-6f6dc887bf5c.png)
 
